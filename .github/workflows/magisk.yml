@@ -14,47 +14,20 @@ on:
       release_type:
         description: "WSA release type"
         required: true
-        default: "retail"
+        default: "insider slow"
         type: choice
-        options:
-        - retail
-        - release preview
-        - insider slow
-        - insider fast
       magisk_apk:
         description: "Magisk version"
         required: true
         default: "stable"
-        type: choice
-        options:
-        - stable
-        - beta
-        - canary
-        - debug
       gapps_variant:
         description: "Variants of gapps"
         required: true
-        default: "none"
-        type: choice
-        options:
-        - none
-        - super
-        - stock
-        - full
-        - mini
-        - micro
-        - nano
-        - pico
-        - tvstock
-        - tvmini
+        default: "stock"
       remove_amazon:
         description: "Remove Amazon AppStore"
         required: true
-        default: "keep"
-        type: choice
-        options:
-        - keep
-        - remove
+        default: "remove"
       root_sol:
         description: "Root solution"
         required: true
